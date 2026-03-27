@@ -1,0 +1,258 @@
+@import '../public/css/font.css';
+@import '../public/css/height.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*公共样式开始*/
+@layer base {
+    html {
+        font-family: font-rem, serif;
+    }
+}
+
+.generalBox{
+    @apply bg-grey-lighten-5 rounded-lg shadow-md  ;
+}
+
+.flexBoxRow{
+    @apply flex-row  flex items-center justify-center ;
+}
+
+.flexBoxCol{
+    @apply flex-col  flex items-center justify-center ;
+}
+/*公共样式结束*/
+
+
+/*这边是nav导航栏的样式*/
+.navLogoBox {
+    @apply flex items-center gap-2 h-64 no-underline cursor-pointer
+}
+
+.navLogoImage {
+    @apply w-10 h-10;
+}
+
+.navLogoText {
+    @apply text-3xl font-righteous text-orange-accent-4;
+}
+
+
+.navButton {
+    @apply w-10 h-10;
+}
+
+.navBar {
+    @apply flex items-center justify-between px-6 bg-white shadow-md font-rem;
+}
+
+.navMenu {
+    @apply !text-grey-darken-3
+    hover:!text-orange-accent-4
+    transition-colors
+    !pl-16 !pr-16 h-64 bg-white shadow-none ;
+}
+
+@layer components {
+    .navButtonFunctional {
+        padding: 8px 16px;
+        @apply text-black;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .navButtonFunctionalIcon {
+        width: 16px;
+        height: 16px;
+        color: #424242;
+    }
+}
+
+/*导航栏样式截至*/
+
+
+/*这边是轮播样式*/
+.bannerBox {
+    @apply w-full bg-gray-400 flex justify-center items-center ;
+    height: 384px;
+}
+
+.bannerBigTitlePrimary {
+    @apply text-48 font-rem font-bold text-orange-accent-4 ;
+    line-height: 58px;
+}
+
+.bannerBigTitleSecondery {
+    @apply text-48 font-rem font-bold text-grey-darken-4 ;
+    line-height: 58px;
+}
+
+/*轮播样式截至*/
+
+
+/*搜索框的样式*/
+.searchingBar {
+    @apply rounded-2xl border-l-orange-darken-4 border-l-2;
+}
+
+
+/* 搜索框的外层容器 */
+.search-container {
+    @apply relative w-full max-w-2xl flex flex-row items-center mt-32 mb-32;
+}
+
+.search-input-pill {
+    @apply w-full px-6 py-3 pr-12 text-gray-600 font-rem bg-white
+    border-2 border-orange-500 rounded-full shadow-md
+    transition-all duration-300;
+}
+
+.search-input-pill:focus {
+    @apply outline-none ring-2 ring-orange-200 border-orange-600 shadow-lg;
+}
+
+.search-input-pill::placeholder {
+    @apply text-gray-400 font-light;
+}
+
+.search-icon-wrapper {
+    @apply absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none;
+}
+
+.search-icon-svg {
+    @apply w-5 h-5 text-gray-400;
+}
+
+/*搜索样式结束*/
+
+
+/*推荐Chip样式开始*/
+.tag-chip-container {
+    @apply flex items-center gap-2 px-3 h-32
+    bg-orange-50 border border-orange-500 border-2 rounded-full
+    cursor-pointer transition-all duration-200
+    hover:bg-orange-100 active:scale-95 shadow-sm;
+}
+
+.tag-chip-icon {
+    @apply w-5 h-5 object-contain;
+}
+
+.tag-chip-text {
+    @apply text-sm text-16 font-rem text-gray-800 whitespace-nowrap;
+}
+
+.tagRecommendContainer {
+    @apply flex items-center gap-2 px-3 py-1.5 ;
+}
+
+.refresh-btn {
+    @apply flex items-center justify-center p-8
+    bg-white border border-gray-100 rounded-full
+    shadow-md transition-all duration-200
+    hover:shadow-lg hover:bg-gray-50 active:scale-90;
+}
+
+.refresh-icon-svg {
+    @apply w-5 h-5 text-gray-700;
+}
+
+/*推荐chip样式结束*/
+
+/*主页分区标题开始*/
+.pregContainer{
+    @apply w-full font-rem text-32 text-grey-darken-4 pt-24 pb-24 pl-24 text-left font-medium;
+    box-sizing: content-box;
+}
+/*主页分区变通结束*/
+
+
+
+/*大卡片开始布局开始*/
+    .sticker-card {
+        @apply w-full max-w-[464px] bg-grey-lighten-5  border-gray-100 border-2 rounded-2xl shadow-sm overflow-hidden;
+    }
+
+    /* --- 上部图片区域 --- */
+    .sticker-card-image-box {
+        @apply  bg-grey-darken-1 flex items-center justify-center p-2 rounded-lg;
+        height: 352px;
+    }
+
+    .sticker-card-image {
+        @apply w-full h-full object-cover  border-gray-950 rounded-lg border-2 border-grey-darken-1;
+    }
+
+    /* --- 下部文本和图标区域 --- */
+    .sticker-card-body {
+        @apply p-4;
+    }
+
+    /* --- 第一行：标题和火图标 --- */
+    .sticker-card-title-row {
+        @apply flex items-center justify-between gap-4 mb-2;
+    }
+
+    .sticker-card-title {
+        @apply font-rem text-24 font-semibold text-gray-900 truncate;
+    }
+
+    .sticker-card-fires {
+        @apply flex items-center gap-1;
+    }
+
+    .sticker-card-fire-icon {
+        @apply w-4 ; /* 这里的图标大小你可以根据 props 调整 */
+    }
+
+    /* --- 第二行：贴纸数、星星和评论数 --- */
+    .sticker-card-meta-row {
+        @apply flex flex-row items-center justify-between gap-2;
+    }
+
+    .sticker-card-tag {
+        @apply bg-gradient-to-tr from-[#FFCA1B] to-[#FFAF01] rounded-e rounded-s px-2  flex items-center justify-center
+    }
+
+    .sticker-card-tag-num {
+        @apply text-white font-bold font-righteous text-16 leading-tight;
+    }
+
+    .sticker-card-tag-text {
+        @apply text-20 font-rem text-gray-500;
+    }
+
+    .sticker-card-stars {
+        @apply flex items-center gap-0.5 mx-1;
+    }
+
+    /* --- 第三行：评分和下载数 --- */
+    .sticker-card-right {
+        @apply flex items-center justify-end gap-1;
+    }
+
+.sticker-card-left {
+    @apply flex items-center justify-end gap-2;
+}
+
+    .sticker-card-rating {
+        @apply text-20 text-gray-400 font-rem ;
+    }
+
+    .sticker-card-downloads {
+        @apply flex items-center gap-1 text-20 font-rem font-normal text-gray-700;
+    }
+
+    .sticker-card-download-icon {
+        @apply w-3.5 h-3.5 text-gray-400;
+    }
+
+/*大卡片布局结束*/
+
+
+
+
