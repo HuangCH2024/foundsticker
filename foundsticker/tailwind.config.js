@@ -1,5 +1,10 @@
-module.exports = {
-  purge: ['./public/css/*.css'],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './public/styles/custom-height.css',
+    './public/styles/custom-general.css',
+    './public/styles/custom-font.css'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -186,3 +191,4 @@ module.exports = {
   },
   plugins: [],
 }
+
