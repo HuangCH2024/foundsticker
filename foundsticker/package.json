@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "twc" : "npx tailwindcss -i ./public/styles/custom-general.css -o ./public/styles/global.css "
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

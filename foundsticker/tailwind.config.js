@@ -5,7 +5,7 @@ export default {
     './public/styles/custom-general.css',
     './public/styles/custom-font.css'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -137,7 +137,7 @@ export default {
         black: '900'
       },
       spacing: {
-        '4': '4px'
+        '4': '4px',
         '8': '8px',
         '16': '16px',
         '24': '24px',
