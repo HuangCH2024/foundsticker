@@ -1,7 +1,7 @@
-import '/public/css/components_main.css';
+
 
 function ChipRecommendFreshButton({handleOnclick}) {
-    const iconPath = "/public/icons/";
+    const iconPath = "/icons/";
     return (
         <button className="refresh-btn" onClick={handleOnclick} aria-label="Refresh">
             <img src={`${iconPath}refresh.svg`} alt="Refresh"/>

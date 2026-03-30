@@ -1,4 +1,4 @@
-import '../../../../public/css/components_main.css';
+
 import NavButton from './NavButton';
 import Logo from '../../components/Logo.jsx';
 import NavFunctionButton from "../../components/NavFunctionButton.jsx";

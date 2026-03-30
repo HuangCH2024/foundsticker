@@ -1,4 +1,3 @@
-import '/public/css/components_main.css';
 import React from 'react';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
@@ -71,7 +70,7 @@ function BigCard({
                     </div>
                     <div className="sticker-card-right">
                         <div className="sticker-card-downloads">
-                           <img src="/public/icons/download.svg" alt="downloadedCount"/>
+                           <img src="/icons/download.svg" alt="downloadedCount"/>
                             {downloadNum}
                         </div>
                     </div>

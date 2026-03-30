@@ -1,11 +1,14 @@
-import '/public/css/components_main.css';
 import ChipRecommend from "./ChipRecommend.jsx";
 
-function Preg({titleName}) {
+function Preg({titleName, className = ""}) {
     return (
-        <>
-            <div className="pregContainer">{titleName}</div>
-        </>
+        // We wrap the original container in a flex layout to center the block itself
+        <div className={`w-full flex justify-center ${className}`}>
+             {/* We use inline styles to override the pl-24 (padding-left) pushing it off center */}
+            <div className="pregContainer" style={{ paddingLeft: 0, textAlign: 'center' }}>
+                {titleName}
+            </div>
+        </div>
     )
 }
 

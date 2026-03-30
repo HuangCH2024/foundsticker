@@ -1,0 +1,10 @@
+# typical gitignore file for a JS react vite project
+
+# for bun user
+
+/foundsticker/bun.lock
+
+# for npm user
+
+/node_modules
+/package-lock.json

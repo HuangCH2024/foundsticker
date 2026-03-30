@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ['./public/css/*.css'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -132,7 +132,7 @@ module.exports = {
         black: '900'
       },
       spacing: {
-        '4': '4px'
+        '4': '4px',
         '8': '8px',
         '16': '16px',
         '24': '24px',

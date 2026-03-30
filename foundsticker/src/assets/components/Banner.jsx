@@ -1,4 +1,3 @@
-import '/public/css/components_main.css';
 import  SearchingBar from '/src/assets/components/Searchingbar.jsx'
 import ChipRecommend from '/src/assets/components/ChipRecommend.jsx'
 import ChipRecommendFreshButton from '/src/assets/components/ChipRecommendFreshButton.jsx'
@@ -9,10 +8,10 @@ import BigCard from "/src/assets/components/BigCard.jsx";
 
 function Banner() {
 
-
-    const testImgPath = '/public/icons/test.png';
+    const testImgPath = '/icons/test.png';
     return (
-        <>
+        <div className="w-full pb-12"> 
+            
             <div className="bannerBox">
                 <div className="flex flex-col items-center">
                     <span className="bannerBigTitlePrimary">QUALITY & FREE</span>
@@ -27,8 +26,13 @@ function Banner() {
                     </div>
                 </div>
             </div>
-            <Preg titleName={"Trending Categories"}></Preg>
-            <div className="flex flex-row gap-4 ml-24 mr-24">
+            
+            <Preg 
+                titleName={"Trending Categories"} 
+                className="!text-center !pl-0" 
+            />
+            
+            <div className="flex flex-row justify-center gap-4 ml-24 mr-24">
                 <GeneralContainer>
                     <CategoryCardCard titleName="This is a test" iconPath={testImgPath} iconAlt={"test"} />
                 </GeneralContainer>
@@ -36,11 +40,25 @@ function Banner() {
                     <CategoryCardCard titleName="This is a test" iconPath={testImgPath} iconAlt={"test"} />
                 </GeneralContainer>
             </div>
-            <Preg titleName={"Popular Stickers"}></Preg>
-            <div>
-                <BigCard downloadNum={114312} fireNum={3} fireIconUrl={"/public/icons/rating_fire.png"} reviewNum={114} stickerTagText={"Stickers"} stickerNum={12} title={"This is a test"} imageUrl={"/public/imgs/test.png"} ratingStarNum={4.5}></BigCard>
+            
+            <Preg 
+                titleName={"Popular Stickers"} 
+                className="!text-center !pl-0" 
+            />
+            
+            <div className="flex flex-wrap justify-center gap-6 p-4">
+                <BigCard 
+                    title="Example Card 1" 
+                    imageUrl="/imgs/test.png" 
+                />
+
+                <BigCard 
+                    title="Example Card 2" 
+                    imageUrl="/imgs/test.png" 
+                /> 
             </div>
-        </>
+            
+        </div>
     )
 }
 

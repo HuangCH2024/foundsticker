@@ -1,4 +1,4 @@
-import '/public/css/components_main.css';
+
 import IconButton from '@mui/material/IconButton';
 
 function  NavFunctionButton({iconPath,iconAlt,HandleFunction}) {

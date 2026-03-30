@@ -1,4 +1,3 @@
-import '/public/css/components_main.css';
 
 function CategoryCard({iconPath, iconAlt, titleName, handleFunction}) {
 

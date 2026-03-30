@@ -1,4 +1,4 @@
-import '/public/css/components_main.css';
+
 
 
 function ChipRecommend({ tagName, tagPic, handleFunction }) {
