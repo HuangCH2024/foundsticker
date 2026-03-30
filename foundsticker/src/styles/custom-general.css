@@ -1,11 +1,79 @@
+@import './custom-font.css';
+
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
 
-.test{
-    @apply bg-red-300
+base{
+    @apply font-rem;
 }
 
 .nav-content{
+    @apply flex items-center justify-center text-grey-darken-4 text-16;
+}
 
+
+.nav-list-container{
+    @apply flex flex-row justify-center items-center h-64;
+}
+
+.list-item{
+    @apply pl-8 pr-8 flex flex-row;
+;}
+
+.list-item-content{
+    @apply  text-grey-darken-4 h-64 flex flex-row items-center hover:text-orange-darken-4 transition-colors;
+}
+.list-item-content-select-icon{
+    @apply mr-8 ml-8 transition-all ;
+}
+
+.pill-button{
+    @apply shadow-sm hover:shadow-md active:shadow-sm active:bg-grey-lighten-2 flex items-center  py-8 bg-grey-lighten-5 transition-all;
+    border-width: 1px; padding-left: 12px; padding-right: 12px ; border-color: #b4bbca; border-radius: 16px;
+}
+
+.banner-container{
+    @apply flex flex-col justify-center items-center;
+    height: 384px;
+}
+
+.banner-font{
+    @apply font-rem font-bold text-48 text-center;
+}
+
+.search-container{
+    @apply w-full items-center px-16 my-40;
+    min-width: 360px ;  max-width: 880px; height: 54px;
+}
+
+.search-bar{
+    @apply border-orange-accent-4 flex flex-row justify-between items-center rounded-32 py-8;
+    border-width: 2px; height: inherit;
+}
+
+.search-bar-input{
+    @apply w-full border-0 outline-none bg-white p-0 m-0 h-32 ml-16 mr-16;
+}
+
+.search-recommend-pillChip{
+    @apply font-rem font-normal text-grey-darken-4 text-20;
+}
+
+.group-smallPillChip-container{
+    @apply flex flex-row gap-x-16;
+
+}
+
+.smallPillChip-container{
+    @apply flex flex-row gap-4 shadow-md rounded-16 justify-center items-center bg-orange-lighten-3 border-orange-darken-3;
+    border-width: 1px; padding: 0 8px;
+
+}
+
+.smallPillChip-icon{
+    height: 20px;
+}
+.smallPillChip-title{
+    @apply text-16 font-rem text-grey-darken-4;
 }

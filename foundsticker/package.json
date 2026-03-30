@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "twc" : "npx tailwindcss -i ./src/styles/custom-general.css -o ./src/styles/global.css --watch"
+    "twc" : "npx tailwindcss -i ./src/styles/custom-general.css -o ./src/styles/global.css"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

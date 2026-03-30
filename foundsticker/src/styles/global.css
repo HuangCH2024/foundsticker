@@ -1,18 +1,67 @@
+/* 放在 @tailwind base; 之前 */
+
+.mr-8 {
+  margin-right: 8px;
+}
+
 .flex {
   display: flex;
+}
+
+.list-item {
+  display: list-item;
+}
+
+.h-16 {
+  height: 16px;
 }
 
 .h-64 {
   height: 64px;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
-.bg-red-300 {
+.gap-16 {
+  gap: 16px;
+}
+
+.rounded-32 {
+  border-radius: 32px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-grey-lighten-3 {
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity, 1));
+}
+
+.bg-grey-lighten-4 {
   --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.text-orange-accent-4 {
+  --tw-text-opacity: 1;
+  color: rgb(255 109 0 / var(--tw-text-opacity, 1));
 }
 
 *, ::before, ::after {
@@ -123,9 +172,7 @@
   --tw-contain-style:  ;
 }
 
-/*
-! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -571,10 +618,386 @@ video {
   display: none;
 }
 
-.test {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 100;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-Thin.ttf') format('truetype');
 }
 
-.nav-content{
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 100;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 200;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 200;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 300;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 300;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 500;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 600;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 700;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 800;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 800;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 900;
+
+  font-style: normal;
+
+  src: url('../../public/font/REM-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'REM';
+
+  font-weight: 900;
+
+  font-style: italic;
+
+  src: url('../../public/font/REM-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RIGHTEOUS';
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  src: url('../../public/font/Righteous-Regular.ttf') format('truetype');
+}
+
+base {
+  font-family: REM, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity, 1));
+}
+
+.nav-list-container {
+  display: flex;
+  height: 64px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.list-item-content {
+  display: flex;
+  height: 64px;
+  flex-direction: row;
+  align-items: center;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity, 1));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.list-item-content:hover {
+  --tw-text-opacity: 1;
+  color: rgb(230 81 0 / var(--tw-text-opacity, 1));
+}
+
+.list-item-content-select-icon {
+  margin-right: 8px;
+  margin-left: 8px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.pill-button {
+  display: flex;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity, 1));
+  padding-top: 8px;
+  padding-bottom: 8px;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.pill-button:hover {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.pill-button:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity, 1));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.pill-button{
+  border-width: 1px;
+  padding-left: 12px;
+  padding-right: 12px ;
+  border-color: #b4bbca;
+  border-radius: 16px;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 384px;
+}
+
+.banner-font {
+  text-align: center;
+  font-family: REM, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.search-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 360px ;
+  max-width: 880px;
+  height: 54px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 32px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 109 0 / var(--tw-border-opacity, 1));
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-width: 2px;
+  height: inherit;
+}
+
+.search-bar-input {
+  margin: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 32px;
+  width: 100%;
+  border-width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 0px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.search-recommend-pillChip {
+  font-family: REM, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity, 1));
+}
+
+.group-smallPillChip-container {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.smallPillChip-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 16px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 108 0 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 128 / var(--tw-bg-opacity, 1));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-width: 1px;
+  padding: 0 8px;
+}
+
+.smallPillChip-icon{
+  height: 20px;
+}
+
+.smallPillChip-title {
+  font-family: REM, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
