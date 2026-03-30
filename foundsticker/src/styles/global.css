@@ -625,7 +625,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-Thin.ttf') format('truetype');
+  src: url('/font/REM-Thin.ttf') format('truetype');
 }
 
 @font-face {
@@ -635,7 +635,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-ThinItalic.ttf') format('truetype');
+  src: url('/font/REM-ThinItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -645,7 +645,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-ExtraLight.ttf') format('truetype');
+  src: url('/font/REM-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -655,7 +655,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-ExtraLightItalic.ttf') format('truetype');
+  src: url('/font/REM-ExtraLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -665,7 +665,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-Light.ttf') format('truetype');
+  src: url('/font/REM-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -675,7 +675,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-LightItalic.ttf') format('truetype');
+  src: url('/font/REM-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -685,7 +685,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-Regular.ttf') format('truetype');
+  src: url('/font/REM-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -695,7 +695,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-Italic.ttf') format('truetype');
+  src: url('/font/REM-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -705,7 +705,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-Medium.ttf') format('truetype');
+  src: url('/font/REM-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -715,7 +715,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-MediumItalic.ttf') format('truetype');
+  src: url('/font/REM-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -725,7 +725,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-SemiBold.ttf') format('truetype');
+  src: url('/font/REM-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -735,7 +735,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-SemiBoldItalic.ttf') format('truetype');
+  src: url('/font/REM-SemiBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -745,7 +745,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-Bold.ttf') format('truetype');
+  src: url('/font/REM-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -755,7 +755,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-BoldItalic.ttf') format('truetype');
+  src: url('/font/REM-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -765,7 +765,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-ExtraBold.ttf') format('truetype');
+  src: url('/font/REM-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -775,7 +775,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-ExtraBoldItalic.ttf') format('truetype');
+  src: url('/font/REM-ExtraBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -785,7 +785,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/REM-Black.ttf') format('truetype');
+  src: url('/font/REM-Black.ttf') format('truetype');
 }
 
 @font-face {
@@ -795,7 +795,7 @@ video {
 
   font-style: italic;
 
-  src: url('../../public/font/REM-BlackItalic.ttf') format('truetype');
+  src: url('/font/REM-BlackItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -805,7 +805,7 @@ video {
 
   font-style: normal;
 
-  src: url('../../public/font/Righteous-Regular.ttf') format('truetype');
+  src: url('/font/Righteous-Regular.ttf') format('truetype');
 }
 
 base {
