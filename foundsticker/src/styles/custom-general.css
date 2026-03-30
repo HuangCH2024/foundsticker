@@ -1,0 +1,11 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+.test{
+    @apply bg-red-300
+}
+
+.nav-content{
+
+}

@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './public/styles/custom-height.css',
-    './public/styles/custom-general.css',
-    './public/styles/custom-font.css'
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {

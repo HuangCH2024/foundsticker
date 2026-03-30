@@ -22,7 +22,9 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "allowJs": true,      // 允许编译器处理 JS 文件
+    "checkJs": false,     // 是否对 JS 文件进行类型检查（通常设为 false）
   },
   "include": ["src"]
 }
