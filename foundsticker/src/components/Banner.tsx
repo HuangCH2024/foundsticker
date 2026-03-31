@@ -1,5 +1,6 @@
 import '../styles/global.css'
 import PillChipSmall from "./PillChipSmall.tsx";
+import RoundButton from "./RoundButton.tsx";
 
 function Banner(): any {
 
@@ -25,6 +26,7 @@ function Banner(): any {
                          <PillChipSmall title={"This is a test"} alt={"test"} iconUrl={"/icons/close.svg"} onClick={()=>{console.log(2)}}></PillChipSmall>
                          <PillChipSmall title={"This is a test"} alt={"test"} iconUrl={"/icons/close.svg"} onClick={()=>{console.log(2)}}></PillChipSmall>
                          <PillChipSmall title={"This is a test"} alt={"test"} iconUrl={"/icons/close.svg"} onClick={()=>{console.log(2)}}></PillChipSmall>
+                         <RoundButton></RoundButton>
                     </div>
                 </section>
             </div>

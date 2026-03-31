@@ -43,12 +43,12 @@ base{
 }
 
 .search-container{
-    @apply w-full items-center px-16 my-40;
+    @apply w-full items-center px-16 my-40 ;
     min-width: 360px ;  max-width: 880px; height: 54px;
 }
 
 .search-bar{
-    @apply border-orange-accent-4 flex flex-row justify-between items-center rounded-32 py-8;
+    @apply border-orange-accent-4 shadow-md hover:shadow-lg transition-all   flex flex-row justify-between items-center rounded-32 py-8;
     border-width: 2px; height: inherit;
 }
 
@@ -66,7 +66,7 @@ base{
 }
 
 .smallPillChip-container{
-    @apply flex flex-row gap-4 shadow-md rounded-16 justify-center items-center bg-orange-lighten-3 border-orange-darken-3;
+    @apply flex flex-row gap-4 hover:bg-orange-accent-1 shadow-md rounded-16 justify-center items-center bg-orange-lighten-4 border-2 active:scale-95 transition-all hover:scale-105 border-orange-darken-3;
     border-width: 1px; padding: 0 8px;
 
 }
@@ -74,6 +74,34 @@ base{
 .smallPillChip-icon{
     height: 20px;
 }
+
 .smallPillChip-title{
-    @apply text-16 font-rem text-grey-darken-4;
+    @apply text-16 font-rem hover:shadow-lg  select-none text-grey-darken-4;
+}
+
+.roundButton-container{
+    @apply bg-grey-lighten-5 border-grey-lighten-3 flex-nowrap active:shadow-lg active:bg-grey-lighten-2 transition-all  hover:bg-grey-lighten-3 shadow-md px-8 rounded-16;
+    border-width: 2px; padding-top: 8px; padding-bottom: 8px;
+ }
+
+.roundedButton-icon{
+    height: 12px;
+    width: 12px;
+}
+
+.card-medium-container{
+    @apply h-48 hover:bg-orange-lighten-5 flex-shrink-0 active:shadow-md active:bg-orange-lighten-4 bg-grey-lighten-5  transition-all hover:border-orange-accent-4 border-grey-lighten-3 rounded-16 shadow-md hover:shadow-lg inline-flex flex-row items-center justify-center gap-16 p-16;
+    border-width: 2px; box-sizing: content-box;
+}
+
+.card-medium-icon{
+    @apply h-32 w-32;
+}
+
+.card-medium-title{
+    @apply font-rem text-24 text-grey-darken-4;
+}
+
+.card-container-grid{
+    @apply grid 
 }
