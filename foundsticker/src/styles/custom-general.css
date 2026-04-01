@@ -34,8 +34,9 @@ base{
 }
 
 .banner-container{
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat;
     height: 384px;
+    background-image: url('../../public/imgs/bg_home_banner.png');
 }
 
 .banner-font{
@@ -48,7 +49,7 @@ base{
 }
 
 .search-bar{
-    @apply border-orange-accent-4 shadow-md hover:shadow-lg transition-all   flex flex-row justify-between items-center rounded-32 py-8;
+    @apply border-orange-accent-4 bg-white shadow-md hover:shadow-lg transition-all   flex flex-row justify-between items-center rounded-32 py-8;
     border-width: 2px; height: inherit;
 }
 
@@ -66,7 +67,7 @@ base{
 }
 
 .smallPillChip-container{
-    @apply flex flex-row gap-4 hover:bg-orange-accent-1 shadow-md rounded-16 justify-center items-center bg-orange-lighten-4 border-2 active:scale-95 transition-all hover:scale-105 border-orange-darken-3;
+    @apply flex flex-row gap-4 hover:bg-orange-lighten-4 shadow-md rounded-16 justify-center items-center bg-orange-lighten-5 border-2 active:scale-95 transition-all hover:scale-105 border-orange-darken-3;
     border-width: 1px; padding: 0 8px;
 
 }
@@ -103,5 +104,8 @@ base{
 }
 
 .card-container-grid{
-    @apply grid 
+    @apply grid ;
 }
+
+
+
