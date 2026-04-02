@@ -28,9 +28,9 @@ const GAP = 16;
 
 const FlexibleScrollbar: React.FC<M3FinalCarouselProps> = ({
                                                   items,
-                                                  visibleCount = 2,
-                                                  cardLargeWidth = 320,
-                                                  cardSmallWidth = 80,
+                                                  visibleCount = 3,
+                                                  cardLargeWidth = 450,
+                                                  cardSmallWidth = 40,
                                                   padding = 16
                                               }) => {
     const [activeIndex, setActiveIndex] = useState(0);

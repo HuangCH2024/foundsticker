@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import { useState } from 'react';
 
-function ButtonGroupBig(): any {
+function ButtonGroupSwitch(): any {
   const [active, setActive] = useState(0);
 
   return (
@@ -75,4 +75,4 @@ function ButtonGroupBig(): any {
   );
 }
 
-export default ButtonGroupBig;
+export default ButtonGroupSwitch;

@@ -5,9 +5,10 @@ import CardGroupRec from "./components/CardGroupRec.tsx";
 import FlexibleScrollbar from "./components/FlexibleScrollbar.tsx";
 import './styles/global.css'
 import CardGridContainer from "./components/CardGridContainer.tsx";
-import ButtonGroup from "./components/ButtonGroupBig.tsx"
+import ButtonGroup from "./components/ButtonGroupSwitch.tsx"
 import CardContent from "./components/CardContent.tsx"
 import LinkButtonGroup from "./components/LinkButtonGroup.tsx";
+import MenuHover from "./components/MenuHover.tsx";
 import React from "react";
 
 
@@ -60,6 +61,16 @@ function App() {
 
     // Data fot testing LinkButtonGroup END
 
+
+    // Data fot testing menuhover
+
+    const menuData = [
+        { label: 'Test', onClick: () => console.log('menuhover') },
+        { label: 'Test with Very LOOOOOOOOG string', onClick: () => console.log('menuhover') },
+        { label: 'okokokokokok', onClick: () => console.log('menuhover') },
+    ]
+    // Data fot testing menuhover END
+
     return (
         <>
             <header>
@@ -80,7 +91,7 @@ function App() {
 
                 {/*This container for testing*/}
                 <div>
-
+                    <MenuHover items={menuData}/>
                 </div>
             </div>
 

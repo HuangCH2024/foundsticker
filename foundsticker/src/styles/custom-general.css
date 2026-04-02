@@ -18,11 +18,11 @@ base{
 }
 
 .list-item{
-    @apply pl-8 pr-8 flex flex-row;
+    @apply px-16 flex flex-row;
 ;}
 
 .list-item-content{
-    @apply  text-grey-darken-4 h-64 flex flex-row items-center hover:text-orange-darken-4 transition-colors;
+    @apply  text-grey-darken-4 h-64 font-rem text-20 flex flex-row items-center hover:text-orange-accent-4 transition-colors;
 }
 .list-item-content-select-icon{
     @apply mr-8 ml-8 transition-all ;
@@ -110,6 +110,14 @@ base{
 .link-button-border{
     border-width: 2px;
     @apply border-grey-lighten-3 hover:border-orange-accent-4;
+}
+
+.link-button-container{
+    @apply active:shadow-sm  link-button-border flex flex-row justify-center items-center gap-8  shadow-sm hover:shadow-md  rounded-16 transition-all cursor-pointer px-8;
+}
+
+.menu-border{
+    border-width: 2px;
 }
 
 
