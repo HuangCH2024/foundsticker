@@ -6,7 +6,8 @@ import FlexibleScrollbar from "./components/FlexibleScrollbar.tsx";
 import './styles/global.css'
 import CardGridContainer from "./components/CardGridContainer.tsx";
 import ButtonGroup from "./components/ButtonGroupBig.tsx"
-import Test from "./components/Test.tsx"
+import CardContent from "./components/CardContent.tsx"
+import LinkButtonGroup from "./components/LinkButtonGroup.tsx";
 import React from "react";
 
 
@@ -33,7 +34,7 @@ function App() {
 
     // Card data testing area
 
-    const cardData: React.ReactNode =   <Test
+    const cardData: React.ReactNode =   <CardContent
         imageUrl="/imgs/placeholder.png"
         title="Sticker Package Title"
         stickerCount={91}
@@ -46,6 +47,18 @@ function App() {
     />
 
     // Card data testing area END
+
+
+    // Data fot testing LinkButtonGroup
+
+    const myLinks = [
+        { name: 'Test', webSideName: 'Test', webIconUrl: '/imgs/placeholder.png', url: '#' },
+        { name: 'Test', webSideName: 'Test', webIconUrl: '/imgs/placeholder.png', url: '#' },
+        { name: 'Test', webSideName: 'Test', webIconUrl: '/imgs/placeholder.png', url: '#' },
+        { name: 'Test', webSideName: 'Test', webIconUrl: '/imgs/placeholder.png', url: '#' },
+    ];
+
+    // Data fot testing LinkButtonGroup END
 
     return (
         <>
@@ -60,8 +73,9 @@ function App() {
                     <TitleMedium name={'Popular Stickers'} onClick={() => console.log("title_2")}/>
                     <FlexibleScrollbar items={stickerData} visibleCount={3}/>
                     <ButtonGroup/>
-                    <CardGridContainer children={cardData}/>
+                    <CardGridContainer children={[cardData,cardData,cardData,cardData,cardData,cardData,cardData,cardData,cardData,cardData,cardData,cardData]}/>{/*12 children items maximum*/}
                     <TitleMedium name={'More Websites for getting more stickers'} onClick={() => console.log("title_2")}/>
+                    <LinkButtonGroup data={myLinks} />
                 </div>
 
                 {/*This container for testing*/}

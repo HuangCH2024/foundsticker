@@ -27,7 +27,7 @@ const StyledRating = styled(Rating)({
     },
 });
 
-const Test: React.FC<StickerCardProps> = ({
+const CardContent: React.FC<StickerCardProps> = ({
                                                      imageUrl,
                                                      title,
                                                      stickerCount,
@@ -59,10 +59,10 @@ const Test: React.FC<StickerCardProps> = ({
                         {tags.map((tag, index) => (
                             <div
                                 key={index}
-                                className="flex items-center gap-1 px-2 py-1 border border-grey-lighten-2 rounded-full bg-white text-12 font-rem text-grey-darken-3"
+                                className="flex items-center align-middle gap-1 px-4 py-[4px] border leading-[12px] border-grey-lighten-2 rounded-full bg-white text-12 font-rem text-grey-darken-3"
                             >
                                 <span>{tag.emoji}</span>
-                                <span>{tag.name}</span>
+                                <span className={"pr-[2px]"}>{tag.name}</span>
                             </div>
                         ))}
                     </div>
@@ -100,4 +100,4 @@ const Test: React.FC<StickerCardProps> = ({
     );
 };
 
-export default Test;
+export default CardContent;
