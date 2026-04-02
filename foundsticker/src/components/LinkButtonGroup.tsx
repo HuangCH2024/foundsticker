@@ -17,11 +17,10 @@ interface LinkButtonGroupProps {
 function LinkButtonGroup({ data }: LinkButtonGroupProps): JSX.Element {
     return (
         <nav>
-            {/* 使用 flex-wrap 确保在按钮较多时能自动换行 */}
             <ul className="flex flex-row flex-wrap gap-16 px-16">
                 {data.map((item, index) => (
                     <li
-                        // 在 map 循环中，必须为每个顶级元素提供唯一的 key 值
+                        // 在 map 循环中必须为每个顶级元素提供唯一的key 值
                         key={item.name + index}
                         className="active:shadow-sm active:bg-grey-lighten-3 link-button-border flex flex-row justify-center items-center gap-8 bg-grey-lighten-5 shadow-sm hover:shadow-md hover:bg-grey-lighten-4 rounded-16 transition-all cursor-pointer px-8"
                     >

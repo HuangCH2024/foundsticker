@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="183bc155-4503-475c-9a4d-9259516545fe" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/ButtonGroupBig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/ButtonGroupBig.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/CardContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/CardContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/CardGridContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/CardGridContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/FlexibleScrollbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/FlexibleScrollbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/LinkButtonGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/LinkButtonGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundsticker/src/components/PillButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/foundsticker/src/components/PillButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +109,7 @@
       <workItem from="1774834668536" duration="19412000" />
       <workItem from="1774943898933" duration="23050000" />
       <workItem from="1775045982410" duration="7750000" />
-      <workItem from="1775119778754" duration="6498000" />
+      <workItem from="1775119778754" duration="7957000" />
     </task>
     <servers />
   </component>
@@ -120,7 +127,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="HuangX/dev-frontend" />
                       </list>
                     </value>
                   </entry>

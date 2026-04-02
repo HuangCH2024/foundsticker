@@ -7,14 +7,13 @@ function ButtonGroupBig(): any {
 
   return (
       <ButtonGroup
-          // 关键 1: 移除 variant="outlined" 的默认边框逻辑，完全由 sx 接管
+          // 在这里修改样式
           sx={{
             px: "16px",
             py: "24px",
             border: 'none',
-            gap: '4px', // 关键 2: 直接通过 flex gap 实现 4px 间隔
+            gap: '4px',
             '& .MuiButtonGroup-grouped': {
-              // 关键 3: 强制让每个按钮的 4 条边框都显示出来
               boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
               fontFamily: "'rem','sans-serif'",
               fontSize: "16px",
@@ -27,14 +26,13 @@ function ButtonGroupBig(): any {
               borderColor: '#e0e0e0 !important',
               color: '#757575',
               backgroundColor: 'white',
-              borderRadius: '4px !important', // 默认夹角圆角为 4px
+              borderRadius: '4px !important',
 
               '&:hover': {
                 backgroundColor: '#fafafa',
                 borderColor: '#bdbdbd !important',
               },
 
-              // 关键 4: 处理首尾的大圆角
               '&:first-of-type': {
                 borderTopLeftRadius: '12px !important',
                 borderBottomLeftRadius: '12px !important',
@@ -44,7 +42,7 @@ function ButtonGroupBig(): any {
                 borderBottomRightRadius: '12px !important',
               },
 
-              // 关键 5: 处理选中状态的样式覆盖
+              // 这边处理一下层叠的问题
               '&.active-btn': {
                 borderColor: '#ff9800 !important',
                 color: '#ff9800',

@@ -17,10 +17,9 @@ interface StickerCardProps {
     tags?: StickerTag[];
 }
 
-// 如果需要微调星星颜色以匹配你的橙色高亮，可以使用 styled
 const StyledRating = styled(Rating)({
     '& .MuiRating-iconFilled': {
-        color: '#ff9800', // 匹配你之前的橙色高亮
+        color: '#ff9800',
     },
     '& .MuiRating-iconHover': {
         color: '#ed6c02',
@@ -87,7 +86,7 @@ const CardContent: React.FC<StickerCardProps> = ({
                             value={Number(rating)}
                             readOnly
                             precision={0.5}
-                            size="small" // 根据你的 16px 字体，small 或 medium 比较合适
+                            size="small"
                             sx={{
                                 fontSize: '1.25rem', // 也可以直接在这里写死尺寸防止缩放干扰
                             }}

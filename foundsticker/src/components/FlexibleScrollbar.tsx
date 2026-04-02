@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Rating from '@mui/material/Rating'; // 引入 MUI Rating 组件
 
+// 这个组件是ai生成的 后期需要手动重构
+
 // --- 类型定义 ---
 interface CarouselItemData {
     id: number | string;
