@@ -3,6 +3,8 @@ import PillButton from "./PillButton.tsx";
 
 function NavBar(){
 
+    // 组件后期需要通过ai修改成符合ts的结构 因为这个是前期编写的 没有考虑数据传入的问题 一般都是props接受一个对象 然后map解包循环填充组件
+
     return(
         <>
             <nav className="flex justify-between h-64 bg-grey-lighten-4 px-16 border-b-2 border-grey-lighten-3">
